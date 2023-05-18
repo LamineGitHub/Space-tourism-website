@@ -2,10 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+header nav a:not(.active) .bar {
+  display: none;
+}
+
 @layer base {
   header nav a {
     @apply w-full text-base font-BarlowCondensed;
     letter-spacing: 2.7px;
+  }
+
+  header nav {
+    inset: 0 0 0 30%;
+    padding: min(30vh, 10rem) 2em;
   }
 
   h1 {
