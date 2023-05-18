@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  header nav a {
+    @apply w-full text-base font-BarlowCondensed;
+    letter-spacing: 2.7px;
+  }
+
+  h1 {
+    @apply text-tertiary font-Bellefair text-8xl;
+  }
+
+  p {
+    @apply text-primary font-Barlow text-[15px] w-10/12;
+    line-height: 25px;
+  }
+
+  h3 {
+    @apply text-base text-primary font-BarlowCondensed;
+    letter-spacing: 3.375px;
+  }
+}
