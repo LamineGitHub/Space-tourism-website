@@ -8,26 +8,28 @@ header nav a:not(.active) .bar {
 
 @layer base {
   header nav a {
-    @apply w-full text-base font-BarlowCondensed;
+    @apply w-full text-base sm:text-sm font-normal font-BarlowCondensed;
     letter-spacing: 2.7px;
   }
 
-  header nav {
-    inset: 0 0 0 30%;
-    padding: min(30vh, 10rem) 2em;
+  @media (max-width: 767px) and (max-width: 639px) {
+    header nav {
+      inset: 0 0 0 30%;
+      padding: min(30vh, 10rem) 4px 0 2em;
+    }
   }
 
   h1 {
-    @apply text-tertiary font-Bellefair text-8xl;
+    @apply text-tertiary font-Bellefair text-8xl sm:text-[150px];
   }
 
   p {
-    @apply text-primary font-Barlow text-[15px] w-10/12;
+    @apply text-primary font-Barlow text-[15px] sm:text-base w-10/12 sm:w-7/12;
     line-height: 25px;
   }
 
   h3 {
-    @apply text-base text-primary font-BarlowCondensed;
+    @apply text-base sm:text-xl text-primary font-BarlowCondensed;
     letter-spacing: 3.375px;
   }
 }
