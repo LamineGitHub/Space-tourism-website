@@ -13,12 +13,14 @@ const Header = () => {
 
   return (
     <>
-      <header className="relative z-10 flex items-center justify-between mb-9 sm:mb-24 text-tertiary">
+      <header className="relative z-10 flex items-center justify-between mb-9 lg:pt-6 text-tertiary">
         <img
           src={logoIcon}
-          className="w-10 h-10 ml-4 sm:w-12 sm:h-12 sm:ml-10"
+          className="w-9 h-9 sm:w-11 sm:h-11 sm:ml-10"
           alt="Logo"
         />
+
+        <span className="hidden xl:inline w-[37%] h-0.5 bg-tertiary/25 absolute left-[10%] z-30"></span>
 
         <button className="z-20 m-6 sm:hidden" onClick={handleClick}>
           <img

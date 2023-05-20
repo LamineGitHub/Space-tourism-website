@@ -3,12 +3,16 @@
 @tailwind utilities;
 
 header nav a:not(.active) .bar {
-  display: none;
+  @apply hidden;
+}
+
+header nav a:not(.active):hover .bar {
+  @apply block opacity-50;
 }
 
 @layer base {
   header nav a {
-    @apply w-full text-base sm:text-sm font-normal font-BarlowCondensed;
+    @apply w-full text-base font-normal sm:text-sm font-BarlowCondensed;
     letter-spacing: 2.7px;
   }
 

@@ -2,9 +2,9 @@ import { Link } from "react-router-dom"
 
 const Home = () => {
   return (
-    <div className="container flex flex-col items-center justify-evenly text-center">
-      <div className="flex flex-col items-center">
-        <h3 className="font-BarlowCondensed mb-6">SO, YOU WANT TO TRAVEL TO</h3>
+    <div className="container flex flex-col lg:flex-row items-center justify-evenly text-center lg:text-left mt-[6vh] sm:mt-[10vh] lg:mt-[15vh]">
+      <div className="flex flex-col items-center lg:items-start lg:w-3/5">
+        <h3 className="mb-6 font-BarlowCondensed">SO, YOU WANT TO TRAVEL TO</h3>
         <h1>SPACE</h1>
         <p className="py-[7vh] sm:py-12">
           Let’s face it; if you want to go to space, you might as well genuinely
@@ -13,7 +13,7 @@ const Home = () => {
           experience!
         </p>
       </div>
-      <div className="relative flex items-center justify-center w-40 h-40 sm:w-60 sm:h-60 rounded-full cursor-pointer bg-tertiary sm:mt-14">
+      <div className="relative flex items-center justify-center w-32 h-32 rounded-full cursor-pointer sm:w-52 sm:h-52 bg-tertiary sm:mt-14">
         <span className="absolute inline-flex w-full h-full rounded-full opacity-75 hover:animate-ping bg-tertiary"></span>
         <Link
           to="/destination"
