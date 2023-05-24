@@ -13,7 +13,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="relative z-10 flex items-center justify-between mb-9 lg:pt-6 text-tertiary">
+      <header className="relative z-10 flex items-center justify-between mb-9 lg:pt-6 text-tertiary ml-3">
         <img
           src={logoIcon}
           className="w-9 h-9 sm:w-11 sm:h-11 sm:ml-10"
