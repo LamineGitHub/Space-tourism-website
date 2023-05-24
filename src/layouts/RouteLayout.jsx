@@ -1,9 +1,14 @@
-import { Outlet } from "react-router-dom"
+import { Outlet, useLocation } from "react-router-dom"
 import Header from "../components/header"
+import { bgPages } from "../utils/bgPages"
 
 const RoutLayout = () => {
+  const { pathname } = useLocation()
+
   return (
-    <div className="w-screen h-screen bg-no-repeat bg-cover bg-home-mobile sm:bg-home-tablet lg:bg-home-desktop">
+    <div
+      className={`w-screen h-screen bg-no-repeat bg-cover ${bgPages(pathname)}`}
+    >
       <Header />
 
       <div className="container mx-auto">

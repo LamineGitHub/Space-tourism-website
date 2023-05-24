@@ -2,7 +2,7 @@ const TechnoLayout = () => {
   return (
     <>
       <div>TechnologyLayout</div>
-      <h1>Technology</h1>
+      <h1>Techno</h1>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil,
         recusandae.
