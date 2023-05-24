@@ -6,8 +6,10 @@ header nav a:not(.active) .bar {
   @apply hidden;
 }
 
-header nav a:not(.active):hover .bar {
-  @apply block opacity-50;
+@media (min-width: 640px) {
+  header nav a:not(.active):hover .bar {
+    @apply block opacity-50;
+  }
 }
 
 @layer base {

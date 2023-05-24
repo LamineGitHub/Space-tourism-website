@@ -1,12 +1,21 @@
+import { NavLink } from "react-router-dom"
+import { Outlet } from "react-router-dom"
+
 const DestinationLayout = () => {
   return (
     <>
-      <div>DestinationLayout</div>
-      <h1>Demo</h1>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil,
-        recusandae.
-      </p>
+      <h3>
+        <span>01</span> Pick your destination
+      </h3>
+
+      <nav className="text-tertiary">
+        <NavLink to="moon">Moon</NavLink>
+        <NavLink to="mars">Mars</NavLink>
+        <NavLink to="europa">Europa</NavLink>
+        <NavLink to="titan">Titan</NavLink>
+      </nav>
+
+      <Outlet />
     </>
   )
 }

@@ -10,14 +10,19 @@ import {
   RouteLayout,
   TechnoLayout,
 } from "./layouts"
-import { Home, NotFount } from "./pages"
+import { Home, NotFount, Moon, Mars, Europa, Titan } from "./pages"
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RouteLayout />}>
       <Route index element={<Home />} />
 
-      <Route path="destination" element={<DestinationLayout />}></Route>
+      <Route path="destination" element={<DestinationLayout />}>
+        <Route index path="moon" element={<Moon />} />
+        <Route path="mars" element={<Mars />} />
+        <Route path="europa" element={<Europa />} />
+        <Route path="titan" element={<Titan />} />
+      </Route>
 
       <Route path="crew" element={<CrewLayout />}></Route>
 
